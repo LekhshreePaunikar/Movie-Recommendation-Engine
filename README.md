@@ -156,10 +156,6 @@ The heart of my engine lives in **`mlp.py`**. Here’s how it’s structured:
 - **`static/styles.css`**  
   - A minimal, Netflix‑inspired dark theme, brand accent color, soft shadows, and focus rings for accessibility.
 
-> Example UI (screenshot of my running app):  
->
-> ![Working UI](sandbox:/mnt/data/16f4166b-c0e1-4ca2-8efc-9fa42d814bc8.png)
-
 ---
 
 ## How To Run It Locally
