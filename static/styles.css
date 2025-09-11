@@ -1,0 +1,111 @@
+/* Theme: Netflix-inspired dark UI layered on top of Bootstrap */
+
+:root {
+  --brand: #e50914;
+  --brand-glow: 0 0 24px rgba(229, 9, 20, 0.35);
+  --surface-1: #141414;
+  --surface-2: #1c1c1c;
+  --text-muted-1: #b3b3b3;
+  --text-muted-2: #8c8c8c;
+  --border-soft: #2a2a2a;
+}
+
+/* Background: gentle brand glows fading into pure black */
+.bg-app {
+  background: radial-gradient(1200px 600px at 10% -10%, rgba(229, 9, 20, 0.18), transparent 40%),
+    radial-gradient(1200px 700px at 110% -10%, rgba(229, 9, 20, 0.12), transparent 45%),
+    #000;
+}
+
+/* Card: rounded panel with a subtle vertical gradient */
+.card-app {
+  background: linear-gradient(180deg, var(--surface-2), var(--surface-1));
+  border-radius: 1rem;
+}
+
+/* Brand accents: color/text subtle extras */
+.text-brand {
+  color: var(--brand) !important;
+}
+.brand-title {
+  letter-spacing: 0.3px;
+  text-shadow: var(--brand-glow);
+}
+
+/* Inputs: dark fields with a brand focus ring */
+.input-app {
+  background-color: #0f0f0f;
+  border-color: var(--border-soft);
+  color: #e8e8e8;
+}
+.input-app::placeholder {
+  color: var(--text-muted-2);
+}
+.input-app:focus {
+  background-color: #101010;
+  border-color: var(--brand);
+  box-shadow: 0 0 0 0.25rem rgba(229, 9, 20, 0.25), var(--brand-glow);
+  color: #fff;
+}
+
+/* Buttons: brand-colored CTA (Call To Action) with tiny lift on hover/focus */
+.btn-brand {
+  background-color: var(--brand);
+  border-color: var(--brand);
+  color: #fff;
+  transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
+}
+.btn-brand:hover,
+.btn-brand:focus {
+  background-color: #f0141f;
+  border-color: #f0141f;
+  box-shadow: var(--brand-glow);
+  color: #fff;
+  transform: translateY(-1px);
+}
+.btn-brand:active {
+  transform: translateY(0);
+}
+
+/* Recommendations list: compact dark list group with soft borders */
+.list-group-app {
+  --bs-list-group-bg: #0e0e0e;
+  --bs-list-group-border-color: var(--border-soft);
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+.list-group-item-app {
+  background: #0e0e0e;
+  color: #ededed;
+  border-color: var(--border-soft);
+}
+.list-group-item-app + .list-group-item-app {
+  border-top-color: var(--border-soft);
+}
+.list-group-item-app:hover {
+  background: #121212;
+}
+
+/* Alerts: gentle danger tone with a brand glow */
+.alert-app {
+  background-color: #1b0b0c;
+  border-color: rgba(229, 9, 20, 0.5);
+  color: #ff6b73;
+  box-shadow: var(--brand-glow);
+}
+
+/* Helper: slightly dimmer text utility */
+.text-muted-2 {
+  color: var(--text-muted-2) !important;
+}
+
+/* Card: stronger shadow so panels pop against black background */
+.card-app.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.75);
+}
+
+/* Mobile: ensure inputs/buttons are easy to tap */
+button.btn,
+input.form-control {
+  min-height: 48px;
+}
