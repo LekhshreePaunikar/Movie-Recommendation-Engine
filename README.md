@@ -3,8 +3,11 @@
 
 Built an end-to-end recommendation engine using the TMDB 5000 dataset, applying text preprocessing, **vectorization (Bag-of-Words)**, **Similarity Computation (Cosine)**, and **K-Nearest-Neighbor (k‑NN)** search on metadata (genres, keywords, cast). Demonstrated skills in **Unsupervised Learning**, **Information Retrieval (IR)**, and **Recommendation Systems**.
 
-**Skills:** Python, Scikit-learn, Pandas, NumPy, Recommendation systems, Unsupervised learning, Information Retrieval (IR), Machine Learning Algorithms and Techniques
-I built a content‑based movie recommendation engine on the TMDB 5000 dataset, vectorized it with scikit‑learn’s `CountVectorizer`, compared movies using cosine similarity, and wrapped it in a Flask web app.
+**Skills:** `Python`, `Scikit-learn`, `Pandas`, `NumPy`, Recommendation systems, Unsupervised learning, Information Retrieval (IR), Machine Learning Algorithms and Techniques.
+
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/c8f2c328-35b2-43b8-a249-5ee38787c988" />
+<img width="600" height="250" alt="image" src="https://github.com/user-attachments/assets/ce801094-709f-417f-a78c-ff428fbfa75d" />
+<img width="600" height="100" alt="image" src="https://github.com/user-attachments/assets/cad86ea6-72bc-4a3a-bb33-9caa882cd16d" />
 
 ---
 
@@ -31,7 +34,7 @@ The movies file contains per‑title metadata such as `id`, `title`, `overview`,
 - **Used columns:** `id`, `title`, `overview`, `genres`, `keywords`, `cast` (top 3 only), `crew` (director only).  
 - **De‑prioritized / redundant for this project:** things like `budget`, `homepage`, `tagline`, etc. (these don’t help the text‑based similarity signal I needed).
 
-> I merged the two datasets on **`title`** and kept only the columns that matter for content similarity.
+I merged the two datasets on **`title`** and kept only the columns that matter for content similarity.
 
 ---
 
