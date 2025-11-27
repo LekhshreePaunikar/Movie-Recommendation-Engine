@@ -1,5 +1,5 @@
 
-# Movie Recommender Engine
+# 🎬 Movie Recommender Engine
 
 Built an end-to-end recommendation engine using the TMDB 5000 dataset, applying text preprocessing, **vectorization (Bag-of-Words)**, **Similarity Computation (Cosine)**, and **K-Nearest-Neighbor (k‑NN)** search on metadata (genres, keywords, cast). Demonstrated skills in **Unsupervised Learning**, **Information Retrieval (IR)**, and **Recommendation Systems**.
 
